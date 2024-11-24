@@ -45,7 +45,7 @@ async def save_group(bot, message):
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                     InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url="https://t.me/Ni_daily_updates")
                  ],[
-                    InlineKeyboardButton("BᴀᴄᴋUᴘ", url="t.me/Ni_Movies")
+                    InlineKeyboardButton("BᴀᴄᴋUᴘ", url="https://t.me/Ni_Movies")
                     InlineKeyboardButton("Oᴡɴᴇʀ", url="t.me/Nishant_0786")                     
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
@@ -69,7 +69,7 @@ async def save_group(bot, message):
                                                                            InlineKeyboardButton('Mᴏᴠɪᴇs Gʀᴏᴜᴘ', url=GRP_LNK),
                                                                            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/Ni_daily_updates")
                                                                         ],[
-                                                                           InlineKeyboardButton("BᴀᴄᴋUᴘ", url="t.me/Ni_Movies"),
+                                                                           InlineKeyboardButton("BᴀᴄᴋUᴘ", url="https://t.me/Ni_Movies"),
 InlineKeyboardButton("Oᴡɴᴇʀ", url="t.me/Nishant_0786")                     
                                                                          ]]
                                                  ),
@@ -92,7 +92,8 @@ async def leave_a_chat(bot, message):
     try:
         buttons = [[
             InlineKeyboardButton('BᴀᴄᴋUᴘ Group',url="https://t.me/Ni_Movies"),
-            InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Nishant_0786")
+            InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Nishant_0786")
+
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
