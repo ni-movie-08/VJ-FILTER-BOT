@@ -282,7 +282,7 @@ async def start(client, message):
                     )
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton('BᴀᴄᴋUᴘ Gʀᴏᴜᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('BᴀᴄᴋUᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
                         InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                     ],[
                         InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
@@ -391,7 +391,7 @@ async def start(client, message):
                     )
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton('BᴀᴄᴋUᴘ Gʀᴏᴜᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('BᴀᴄᴋUp',url=f'https://t.me/{SUPPORT_CHAT}'),
                         InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                     ],[
                         InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
@@ -401,7 +401,7 @@ async def start(client, message):
                     ]]
                 else:
                     button = [[
-                        InlineKeyboardButton('BᴀᴄᴋUᴘ Gʀᴏᴜᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('BᴀᴄᴋUᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
                         InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                     ]]
                 try:
@@ -591,7 +591,7 @@ async def start(client, message):
                     )
                     return
             button = [[
-                       InlineKeyboardButton('BᴀᴄᴋUᴘ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+                       InlineKeyboardButton('BᴀᴄᴋUᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
             ]]
             if STREAM_MODE == True:
