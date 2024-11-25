@@ -653,7 +653,7 @@ async def start(client, message):
             )
             return
     button = [[
-        InlineKeyboardButton('BᴀᴄᴋUᴘ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
+        InlineKeyboardButton('BᴀᴄᴋUᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
         InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
     ]]
     if STREAM_MODE == True:
