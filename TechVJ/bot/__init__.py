@@ -2,14 +2,11 @@
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-from pyrogram import Client
+from pyrogram import Client, types
 from info import *
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
-from pyrogram import types
 from aiohttp import web
-from pyrogram import Client
-from info import *
 
 
 class TechVJXBot(Client):
