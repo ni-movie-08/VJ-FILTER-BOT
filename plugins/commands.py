@@ -283,7 +283,8 @@ async def start(client, message):
                 if STREAM_MODE == True:
                     button = [[
                         InlineKeyboardButton('BᴀᴄᴋUᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+
                     ],[
                         InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
@@ -292,8 +293,9 @@ async def start(client, message):
                     ]]
                 else:
                     button = [[
-                        InlineKeyboardButton('BᴀᴄᴋUᴘ Gʀᴏᴜᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                        InlineKeyboardButton('BᴀᴄᴋUᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+
                     ]]
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
@@ -392,7 +394,8 @@ async def start(client, message):
                 if STREAM_MODE == True:
                     button = [[
                         InlineKeyboardButton('BᴀᴄᴋUp',url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+
                     ],[
                         InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
@@ -402,7 +405,8 @@ async def start(client, message):
                 else:
                     button = [[
                         InlineKeyboardButton('BᴀᴄᴋUᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+
                     ]]
                 try:
                     p = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False, reply_markup=InlineKeyboardMarkup(button))
@@ -531,11 +535,12 @@ async def start(client, message):
                     )
                     return
             button = [[
-                        InlineKeyboardButton('BᴀᴄᴋUᴘ Gʀᴏᴜᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                        InlineKeyboardButton('BᴀᴄᴋUᴘ',url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+
             ]]
             if STREAM_MODE == True:
-                button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
+                button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online 🖥️', callback_data=f'generate_stream_link:{file_id}')])
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
@@ -592,10 +597,11 @@ async def start(client, message):
                     return
             button = [[
                        InlineKeyboardButton('BᴀᴄᴋUᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                       InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                       InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+
             ]]
             if STREAM_MODE == True:
-                button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
+                button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online 🖥️', callback_data=f'generate_stream_link:{file_id}')])
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
@@ -657,7 +663,7 @@ async def start(client, message):
         InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
     ]]
     if STREAM_MODE == True:
-        button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
+        button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online 🖥️', callback_data=f'generate_stream_link:{file_id}')])
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
