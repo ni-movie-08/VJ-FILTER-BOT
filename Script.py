@@ -251,7 +251,7 @@ Nᴀᴍᴇ - {}"""
 
     CAPTION = """<b><blockquote>Title : {file_name}</blockquote>
 <blockquote>Jᴏɪɴ ❤️‍🔥 : <a href='https://t.me/Ni_daily_updates'>Uᴘᴅᴀᴛᴇs</a> </blockquote>
-<blockquote>𝙳𝚘𝚗𝚝 𝚏𝚘𝚛𝚐𝚎𝚝 BᴀᴄᴋUᴘ✨ : <a href='https://t.me/Ni_Movies'>🦋 Nɪ Mᴏᴠɪᴇs 🦋</a> </blockquote></b>""" 
+<blockquote>𝙳𝚘𝚗𝚝 𝚏𝚘𝚛𝚐𝚎𝚝 BᴀᴄᴋUᴘ✨ : \n<a href='https://t.me/Ni_Movies'>🦋 Nɪ Mᴏᴠɪᴇs 🦋</a> </blockquote></b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
