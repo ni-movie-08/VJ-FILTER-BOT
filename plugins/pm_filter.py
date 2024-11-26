@@ -2739,17 +2739,17 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         )
         temp.IMDB_CAP[message.from_user.id] = cap
         if not settings["button"]:
-            cap+="<b>\n\n<u>🍿 Your Movie Files 👇</u></b>\n"
+            cap+="<b><blockquote\n\n<u>🍿 Your Movie Files 👇</u></blockquote>\n"
             for file in files:
-                cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n</a></b>"
+                cap += f"<b>\n📓 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n</a></b>"
     else:
         if settings["button"]:
-            cap = f"<b><blockquote>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}</blockquote>\n\n<b><blockquote>Rᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {message.from_user.mention}</blockquote>\n\n<b><blockquote>ʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs</blockquote>\n\n<b><blockquote>ᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title}</blockquote>\n\n<b><blockquote>⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️</blockquote>\n\n</b>"
+            cap = f"<b><blockquote>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}</blockquote>\n<b><blockquote>Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}</blockquote>\n<b><blockquote>ʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ : {remaining_seconds} sᴇᴄᴏɴᴅs</blockquote>\n<b><blockquote>ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</blockquote>\n\n<b><blockquote>⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️</blockquote>\n</b>"
         else:
-            cap = f"<b><blockquote>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}</blockquote>\n\n<b><blockquote>Rᴇǫᴜᴇsᴛᴇᴅ Bʏ ☞ {message.from_user.mention}</blockquote>\n\n<b><blockquote>ʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ ☞ {remaining_seconds} sᴇᴄᴏɴᴅs</blockquote>\n\n<b><blockquote>ᴘᴏᴡᴇʀᴇᴅ ʙʏ ☞ : {message.chat.title}</blockquote>\n\n<b><blockquote>⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️</blockquote>\n\n</b>"
-            cap+="<b><u>🍿 Your Movie Files 👇</u></b>\n\n"
+            cap = f"<b><blockquote>Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}</blockquote>\n<b><blockquote>Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}</blockquote>\n<b><blockquote>ʀᴇsᴜʟᴛ sʜᴏᴡ ɪɴ : {remaining_seconds} sᴇᴄᴏɴᴅs</blockquote>\n<b><blockquote>ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</blockquote>\n\n<b><blockquote>⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️</blockquote>\n</b>"
+            cap+="<b><blockquote>🍿 Your Movie Files 👇</u></blockquote>\n\n"
             for file in files:
-                cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n\n</a></b>"
+                cap += f"<b>📓 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n\n</a></b>"
 
     if imdb and imdb.get('poster'):
         try:
