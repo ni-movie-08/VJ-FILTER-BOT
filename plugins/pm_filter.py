@@ -2744,12 +2744,12 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
                 cap += f"<b>\n📓 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n</a></b>"
     else:
         if settings["button"]:
-            cap = f"<b><blockquote>📢Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}</blockquote>\n\n<b>🧑‍💻Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}</blockquote>\n<b>⏳ 𝗥ᴇ𝘀ᴜʟᴛ 𝘀ʜᴏᴡɴ ɪɴ : {remaining_seconds} sᴇᴄᴏɴᴅs</>\n<b>✨ 𝗣ᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</blockquote>\n\n<b><blockquote>⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️</blockquote>\n\n</b>"
+            cap = f"<b><blockquote>📢Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}</blockquote>\n\n<b>🧑‍💻Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}</b>\n<b>⏳ 𝗥ᴇ𝘀ᴜʟᴛ 𝘀ʜᴏᴡɴ ɪɴ : {remaining_seconds} sᴇᴄᴏɴᴅs</>\n<b>✨ 𝗣ᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</>\n\n<b><blockquote>⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️</blockquote>\n\n</b>"
         else:
-            cap = f"<b><blockquote>📢Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}</blockquote>\n\n<b>🧑‍💻Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}</b>\n<b>⏳ 𝗥ᴇ𝘀ᴜʟᴛ 𝘀ʜᴏᴡɴ ɪɴ : : {remaining_seconds} sᴇᴄᴏɴᴅs</>\n<b>✨ 𝗣ᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</>\n\n<b><blockquote>⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️</blockquote>\n\n</b>"
-            cap+="<b><blockquote>🍿 Your Movie Files 👇</u></blockquote>\n\n"
+            cap = f"<b><blockquote>📢Tʜᴇ Rᴇꜱᴜʟᴛꜱ Fᴏʀ ☞ {search}</blockquote>\n\n<b>🧑‍💻Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}</b>\n<b>⏳ 𝗥ᴇ𝘀ᴜʟᴛ 𝘀ʜᴏᴡɴ ɪɴ : {remaining_seconds} sᴇᴄᴏɴᴅs</>\n<b>✨ 𝗣ᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}</>\n\n<b><blockquote>⚠️ ᴀꜰᴛᴇʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️</blockquote>\n\n</b>"
+            cap+="<b><blockquote>🎭 Your Movie Files 👇</u></blockquote>\n\n"
             for file in files:
-                cap += f"<b>📓 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n\n</a></b>"
+                cap += f"<b>■ <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n\n</a></b>"
 
     if imdb and imdb.get('poster'):
         try:
