@@ -5,8 +5,7 @@
   VJ FILTER BOT
 </h1>
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+VJ+Filter+Bot!)
-</p>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=081D26&width=435&lines=NISHANT)](https://git.io/typing-svg)
 
 ## Main Feature 
 <b>
